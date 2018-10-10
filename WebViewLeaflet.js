@@ -20,7 +20,7 @@ const uniqby = require('lodash.uniqby');
 // https://github.com/facebook/react-native/issues/16133
 
 const INDEX_FILE_PATH = `./assets/dist/index.html`;
-const INDEX_FILE_ASSET_URI = Asset.fromModule(require(INDEX_FILE_PATH)).uri;
+//const INDEX_FILE_ASSET_URI = Asset.fromModule(require(INDEX_FILE_PATH)).uri;
 
 // const INDEX_FILE = require(INDEX_FILE_PATH);
 const MESSAGE_PREFIX = 'react-native-webview-leaflet';
@@ -160,9 +160,7 @@ export default class WebViewLeaflet extends React.Component {
         }}
         /* source={INDEX_FILE} */
         source={
-          Platform.OS === 'ios'
-            ? require('./assets/dist/index.html')
-            : { uri: INDEX_FILE_ASSET_URI }
+          require('./assets/dist/index.html')
         }
         startInLoadingState={true}
         renderLoading={this.renderLoading}

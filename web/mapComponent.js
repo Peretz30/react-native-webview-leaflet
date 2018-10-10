@@ -40,7 +40,7 @@ class mapComponent extends Component {
       locations: [],
       markers: [],
       showAttributionControl: false,
-      mapLayers: []
+      mapLayers: mapLayers
     };
   }
 
