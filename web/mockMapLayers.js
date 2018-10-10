@@ -10,6 +10,7 @@ const mapLayers = [
     attribution:
       '&amp;copy <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors'
   },
+  /*
    {
     name: 'streets',
     type: 'TileLayer',
@@ -36,7 +37,7 @@ const mapLayers = [
     attribution:
       '&amp;copy <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors'
   },
- /* {
+  {
      name: 'image',
      type: 'ImageOverlay',
      baseLayer: true,
