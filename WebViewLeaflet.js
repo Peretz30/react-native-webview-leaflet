@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 import Button from './Button';
-import { Asset } from 'expo';
+//import { Asset } from 'expo';
 
 const util = require('util');
 const isValidCoordinates = require('is-valid-coordinates');
